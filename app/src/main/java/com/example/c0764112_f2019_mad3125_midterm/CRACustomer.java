@@ -217,29 +217,29 @@ public class CRACustomer implements Parcelable {
 
     public double CalCpp(){
 
-        if(GrossIncome>=57400){
-            Cpp=  54700*0.051;
+        if(GrossIncome>=56400){
+            Cpp=  56400*0.055;
         }
         else{
-            Cpp=GrossIncome*0.051;
+            Cpp=GrossIncome*0.055;
         }
         return Cpp;
 
     }
 
     public double CalRrsp(){
-        MaxRrsp=GrossIncome*0.18;
+        MaxRrsp=GrossIncome*0.17;
 
         return MaxRrsp;
     }
 
     public double CalEi(){
 
-        if(GrossIncome>=53100){
-            EI=  53100*0.0162;
+        if(GrossIncome>=53300){
+            EI=  53300*0.0172;
         }
         else{
-            EI=GrossIncome*0.0162;
+            EI=GrossIncome*0.0172;
         }
         return EI;
 
@@ -257,9 +257,9 @@ public class CRACustomer implements Parcelable {
         if (tti>12069)
         {
 
-            tti=tti-12069;
-            if(tti>35561) {
-                tax=35561;
+            tti=tti-12079;
+            if(tti>35655) {
+                tax=35655;
 
             }
             else{
