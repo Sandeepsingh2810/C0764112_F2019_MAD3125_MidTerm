@@ -65,8 +65,8 @@ public class DisplayDataActivity extends AppCompatActivity {
         provincialTax.setText(String.valueOf(nf.format(c.getProvincialTax())));
         cpp.setText(String.valueOf(nf.format(c.getCpp())));
         ei.setText(String.valueOf(nf.format(c.getEI())));
-        carry.setText(String.valueOf(nf.format(c.getCarryForwardRrsp()));
-        totalTaxableIncome.setText(String.valueOf(c.getTotalTaxedIncome()));
+        carry.setText(String.valueOf(nf.format(c.getCarryForwardRrsp())));
+        totalTaxableIncome.setText(String.valueOf(nf.format(c.getTotalTaxedIncome())));
         Totaltax.setText(String.valueOf(nf.format(c.getTotalTaxPaid())));
 
 
