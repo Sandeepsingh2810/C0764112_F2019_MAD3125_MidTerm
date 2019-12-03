@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.maleRb:
 
                     {
-                        
+
                         gender="Male";
                         break;
                     }
@@ -135,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
                         rrsp.getText().toString().length()==0
 
                 )
+                
                 {
                     sin.setError("Sin Incorrect");
 
