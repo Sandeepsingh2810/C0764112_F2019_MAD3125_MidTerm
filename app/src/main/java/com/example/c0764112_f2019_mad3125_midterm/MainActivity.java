@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(firstName.getText().toString().length()==0)
-                
+
                 {
 
                     firstName.setError("This Field Cannot Be Empty");
@@ -174,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
                     lastName.setError("This Field Cannot Be Empty");
 
                 }
+                
                 if(dob.getText().toString().length()==0)
                 {
                     dob.setError("This Field Cannot Be Empty");
