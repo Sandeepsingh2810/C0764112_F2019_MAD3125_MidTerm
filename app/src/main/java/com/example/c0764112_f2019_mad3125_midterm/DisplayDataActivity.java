@@ -47,6 +47,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 //for after decimal digits
         NumberFormat nf= NumberFormat.getInstance(Locale.CANADA);
         System.out.println(nf.format(c.getCpp()));
+        
 
         SimpleDateFormat sm=new SimpleDateFormat("dd-MMM-yyyy", Locale.US);
         Calendar myCalendar = Calendar.getInstance();
