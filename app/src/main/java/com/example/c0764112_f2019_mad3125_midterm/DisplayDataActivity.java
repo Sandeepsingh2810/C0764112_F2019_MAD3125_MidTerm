@@ -57,9 +57,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 
 
         sin.setText(c.getSinNumber());
-
         fullname.setText(c.getFullName());
-        
         gender.setText(c.getGender());
         age.setText(c.getAge());
         taxdate.setText(currdate);
