@@ -13,7 +13,7 @@
             android:label="TAX DETAILS"
             android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity"
-            android:label="PERSONAL DETAILS">
+            android:label="PERSONAL DETAIL'S">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
