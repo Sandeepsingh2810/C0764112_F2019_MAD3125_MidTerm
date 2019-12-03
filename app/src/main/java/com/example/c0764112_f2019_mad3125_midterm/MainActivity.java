@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                     lastName.setError("This Field Cannot Be Empty");
 
                 }
-                
+
                 if(dob.getText().toString().length()==0)
                 {
                     dob.setError("This Field Cannot Be Empty");
@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(age<18)
+                
                 {
                     dob.setError("Not Eligible For filing tax");
 
