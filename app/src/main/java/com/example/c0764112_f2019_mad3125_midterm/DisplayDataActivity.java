@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -37,6 +39,9 @@ public class DisplayDataActivity extends AppCompatActivity {
         carry=findViewById(R.id.txtCarryFrwd);
         totalTaxableIncome=findViewById(R.id.txtTaxableIncome);
         Totaltax=findViewById(R.id.txtTotalTax);
+
+        NumberFormat nf= NumberFormat.getInstance(Locale.CANADA);
+        System.out.println(nf.format(c.getCpp()));
 
 
         SimpleDateFormat sm=new SimpleDateFormat("dd-MMM-yyyy", Locale.US);
