@@ -44,13 +44,6 @@ public class MainActivity extends AppCompatActivity {
         calTaxBtn=findViewById(R.id.btnCalculate);
 
 
-//
-//        String strsin = sin.getText().toString();
-//
-//        if(TextUtils.) {
-//            sin.setError("Your message");
-//            return;
-//        }
 
 
         final Calendar myCalendar = Calendar.getInstance();
@@ -80,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
                 dob.setText(dobtext);
                 int curYear=Calendar.getInstance().get(Calendar.YEAR);
-                //System.out.println(curYear);
+
                 age=curYear-year;
-                //System.out.println(age);
+
             }
 
         };
@@ -91,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+
                 new DatePickerDialog(MainActivity.this, date, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
@@ -139,24 +132,33 @@ public class MainActivity extends AppCompatActivity {
 
                 ){
                     sin.setError("Sin Incorrect");
+
                     firstName.setError("This Field Cannot Be Empty");
+
                     lastName.setError("This Field Cannot Be Empty");
+
                     dob.setError("This Field Cannot Be Empty");
+
                     grossIncome.setError("This Field Cannot Be Empty");
+
                     rrsp.setError("This Field Cannot Be Empty");
+
                 }
 
 
-                if(sin.getText().toString().length() != 11) {
+                if(sin.getText().toString().length() != 11)
+                {
                     sin.setError("Sin Incorrect");
 
                 }
                 if(firstName.getText().toString().length()==0)
                 {
+
                     firstName.setError("This Field Cannot Be Empty");
 
                 }
                 if(lastName.getText().toString().length()==0)
+
                 {
                     lastName.setError("This Field Cannot Be Empty");
 
@@ -169,6 +171,8 @@ public class MainActivity extends AppCompatActivity {
                 if(age<18)
                 {
                     dob.setError("Not Eligible For filing tax");
+                    dob.setTextColor(getResources().getColor(R.color.colorAccent));
+
 
                 }
 
