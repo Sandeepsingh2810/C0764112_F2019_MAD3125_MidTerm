@@ -290,8 +290,8 @@ public class CRACustomer implements Parcelable {
                 if(tti>47628.99)
                 {
                     tti = tti-47628.99;
-                    if(tti>52407.99){
-                        tax=52407.99;
+                    if(tti>52307.99){
+                        tax=52307.99;
                     }
                     else{
                         tax=tti;
