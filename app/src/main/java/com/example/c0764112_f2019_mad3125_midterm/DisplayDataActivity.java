@@ -43,7 +43,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 
         NumberFormat nf= NumberFormat.getInstance(Locale.CANADA);
         System.out.println(nf.format(c.getCpp()));
-        
+
         SimpleDateFormat sm=new SimpleDateFormat("dd-MMM-yyyy", Locale.US);
         Calendar myCalendar = Calendar.getInstance();
         String currdate=sm.format(myCalendar.getTime());
@@ -57,7 +57,9 @@ public class DisplayDataActivity extends AppCompatActivity {
 
 
         sin.setText(c.getSinNumber());
+
         fullname.setText(c.getFullName());
+        
         gender.setText(c.getGender());
         age.setText(c.getAge());
         taxdate.setText(currdate);
