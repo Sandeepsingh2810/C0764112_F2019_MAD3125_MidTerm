@@ -217,29 +217,29 @@ public class CRACustomer implements Parcelable {
 
     public double CalCpp(){
 
-        if(GrossIncome>=56400){
-            Cpp=  56400*0.055;
+        if(GrossIncome>=57400){
+            Cpp=  54700*0.051;
         }
         else{
-            Cpp=GrossIncome*0.055;
+            Cpp=GrossIncome*0.051;
         }
         return Cpp;
 
     }
 
     public double CalRrsp(){
-        MaxRrsp=GrossIncome*0.17;
+        MaxRrsp=GrossIncome*0.18;
 
         return MaxRrsp;
     }
 
     public double CalEi(){
 
-        if(GrossIncome>=53300){
-            EI=  53300*0.0172;
+        if(GrossIncome>=53100){
+            EI=  53100*0.0162;
         }
         else{
-            EI=GrossIncome*0.0172;
+            EI=GrossIncome*0.0162;
         }
         return EI;
 
@@ -257,10 +257,9 @@ public class CRACustomer implements Parcelable {
         if (tti>12069)
         {
 
-            tti=tti-12079;
-            if(tti>35655)
-            {
-                tax=35655;
+            tti=tti-12069;
+            if(tti>35561) {
+                tax=35561;
 
             }
             else{
@@ -290,16 +289,15 @@ public class CRACustomer implements Parcelable {
                 if(tti>47628.99)
                 {
                     tti = tti-47628.99;
-                    if(tti>52307.99){
-                        tax=52307.99;
+                    if(tti>52407.99){
+                        tax=52407.99;
                     }
                     else{
                         tax=tti;
                     }
                     tax=tax*0.26;
                     calculatedFtax=calculatedFtax+tax;
-//                    System.out.println("Tax 3 : "+tax);
-//                    System.out.println("FTax range 3 : "+tti);
+
                     if (tti > 52407.99)
                     {
                         tti = tti-52407.99;
@@ -338,14 +336,8 @@ public class CRACustomer implements Parcelable {
         }
 
 
-
-
-
-
-
         return calculatedFtax;
     }
-
 
 
     public double CalProvincialTax()
@@ -370,8 +362,7 @@ public class CRACustomer implements Parcelable {
 
             tax=tax*0.505;
             calculatedPtax=calculatedPtax+tax;
-//            System.out.println("TAX 1:"+calculatedPtax);
-//            System.out.println("FTax range 1 : "+tti);
+
             if(tti>33323.99)
             {
                 tti=tti-33323.99;
@@ -384,9 +375,9 @@ public class CRACustomer implements Parcelable {
                     tax=tti;
                 }
                 tax=tax*0.915;
-                //   System.out.println("TAX 2:"+tax);
+
                 calculatedPtax=calculatedPtax+tax;
-                //  System.out.println("FTax range 2 : "+tti );
+
                 if(tti>43906.99)
                 {
                     tti = tti-43906.99;
@@ -398,8 +389,7 @@ public class CRACustomer implements Parcelable {
                     }
                     tax=tax*0.1116;
                     calculatedPtax=calculatedPtax+tax;
-//                    System.out.println("Tax 3 : "+tax);
-//                    System.out.println("FTax range 3 : "+tti);
+
                     if (tti > 62186.99)
                     {
                         tti = tti-62186.99;
@@ -411,8 +401,7 @@ public class CRACustomer implements Parcelable {
                         }
                         tax=tax*0.1216;
                         calculatedPtax=+calculatedPtax+tax;
-//                        System.out.println(tax);
-//                        System.out.println("FTax range 4 : "+tti);
+
                         if (tti > 69999.99)
                         {
                             tti = tti-69999.99;
@@ -438,18 +427,11 @@ public class CRACustomer implements Parcelable {
         }
 
 
-
-
-
-
-
         return calculatedPtax;
     }
 
 
     private static final CRACustomer ourInstance = new CRACustomer();
-
-
 
 
 
