@@ -221,15 +221,14 @@ public class MainActivity extends AppCompatActivity {
 
 
                 i.putExtra("data", cDetail);
-                
+
                 startActivity(i);
+
+
 
 
             }
         });
-
-
-
-
+        
     }
 }
