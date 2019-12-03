@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.maleRb:
 
                     {
+                        
                         gender="Male";
                         break;
                     }
