@@ -258,7 +258,8 @@ public class CRACustomer implements Parcelable {
         {
 
             tti=tti-12079;
-            if(tti>35655) {
+            if(tti>35655)
+            {
                 tax=35655;
 
             }
