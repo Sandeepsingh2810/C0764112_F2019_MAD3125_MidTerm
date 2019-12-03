@@ -157,13 +157,14 @@ public class MainActivity extends AppCompatActivity {
                     sin.setError("Sin Incorrect");
 
                 }
-                
+
                 if(firstName.getText().toString().length()==0)
                 {
 
                     firstName.setError("This Field Cannot Be Empty");
 
                 }
+
                 if(lastName.getText().toString().length()==0)
 
                 {
