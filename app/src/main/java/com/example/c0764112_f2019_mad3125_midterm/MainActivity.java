@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(age<18)
-                
+
                 {
                     dob.setError("Not Eligible For filing tax");
 
@@ -224,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 i.putExtra("data", cDetail);
+                
 
                 startActivity(i);
 
