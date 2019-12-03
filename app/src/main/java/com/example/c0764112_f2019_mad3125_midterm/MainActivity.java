@@ -176,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                     dob.setError("This Field Cannot Be Empty");
 
                 }
+                
                 if(age<18)
                 {
                     dob.setError("Not Eligible For filing tax");
