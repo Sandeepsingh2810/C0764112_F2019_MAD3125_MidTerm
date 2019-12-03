@@ -27,7 +27,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
         sin=findViewById(R.id.txtSin);
-        
+
         fullname=findViewById(R.id.txtFullName);
         gender=findViewById(R.id.txtGender);
         age=findViewById(R.id.txtAge);
@@ -48,7 +48,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         SimpleDateFormat sm=new SimpleDateFormat("dd-MMM-yyyy", Locale.US);
         Calendar myCalendar = Calendar.getInstance();
         String currdate=sm.format(myCalendar.getTime());
-        if(c.getCarryForwardRrsp()<0){
+        if(c.getCarryForwardRrsp()<0.0){
             carry.setTextColor(this.getResources().getColor(colorAccent));
             carry.setTypeface(null, Typeface.BOLD_ITALIC);
         }
@@ -60,14 +60,14 @@ public class DisplayDataActivity extends AppCompatActivity {
         gender.setText(c.getGender());
         age.setText(c.getAge());
         taxdate.setText(currdate);
-        grossIncome.setText(String.valueOf(c.getGrossIncome()));
-        federalTax.setText(String.valueOf(c.getFedralTax()));
-        provincialTax.setText(String.valueOf(c.getProvincialTax()));
+        grossIncome.setText(String.valueOf(nf.format(c.getGrossIncome())));
+        federalTax.setText(String.valueOf(nf.format(c.getFedralTax())));
+        provincialTax.setText(String.valueOf(nf.format(c.getProvincialTax())));
         cpp.setText(String.valueOf(c.getCpp()));
         ei.setText(String.valueOf(c.getEI()));
         carry.setText(String.valueOf(c.getCarryForwardRrsp()));
         totalTaxableIncome.setText(String.valueOf(c.getTotalTaxedIncome()));
-        Totaltax.setText(String.valueOf(c.getTotalTaxPaid()));
+        Totaltax.setText(String.valueOf(nf.format(c.getTotalTaxPaid())));
 
 
 
