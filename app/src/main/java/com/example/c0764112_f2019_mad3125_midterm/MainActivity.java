@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
                                   int dayOfMonth) {
-                // TODO Auto-generated method stub
+               
                 myCalendar.set(Calendar.YEAR, year);
                 myCalendar.set(Calendar.MONTH, monthOfYear);
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     dob.setError("Not Eligible For filing tax");
                     dob.setTextColor(getResources().getColor(R.color.colorAccent));
-                    
+
                     dob.setTypeface(null, Typeface.BOLD_ITALIC);
 
                 }
