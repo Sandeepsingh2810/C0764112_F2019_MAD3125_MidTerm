@@ -176,10 +176,11 @@ public class MainActivity extends AppCompatActivity {
                     dob.setError("This Field Cannot Be Empty");
 
                 }
-                
+
                 if(age<18)
                 {
                     dob.setError("Not Eligible For filing tax");
+
                     dob.setTextColor(getResources().getColor(R.color.colorAccent));
 
                     dob.setTypeface(null, Typeface.BOLD_ITALIC);
