@@ -25,7 +25,7 @@ public class DisplayDataActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_data);
-        
+
 
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
@@ -44,7 +44,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         carry=findViewById(R.id.txtCarryFrwd);
         totalTaxableIncome=findViewById(R.id.txtTaxableIncome);
         Totaltax=findViewById(R.id.txtTotalTax);
-
+//for after decimal digits
         NumberFormat nf= NumberFormat.getInstance(Locale.CANADA);
         System.out.println(nf.format(c.getCpp()));
 
