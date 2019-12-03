@@ -202,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 if(rrsp.getText().toString().length()==0)
 
                 {
+                    
                     rrsp.setError("This Field Cannot Be Empty");
                 }
 
@@ -224,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 i.putExtra("data", cDetail);
-                
+
 
                 startActivity(i);
 
