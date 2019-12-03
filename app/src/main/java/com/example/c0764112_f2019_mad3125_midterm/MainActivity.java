@@ -151,6 +151,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if(sin.getText().toString().length() != 11)
+
+                
                 {
                     sin.setError("Sin Incorrect");
 
