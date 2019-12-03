@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                         gender="Female";
                         break;
                     }
-                    
+
                     case R.id.othersRb:{
                         gender="Others";
                         break;
@@ -181,11 +181,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(grossIncome.getText().toString().length()==0)
+
                 {
                     grossIncome.setError("This Field Cannot Be Empty");
 
                 }
+
                 if(rrsp.getText().toString().length()==0)
+
                 {
                     rrsp.setError("This Field Cannot Be Empty");
                 }
@@ -205,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
                 cDetail.setRrsp(Double.parseDouble((rrsp.getText().toString())));
                 cDetail.setGender(gender);
                 cDetail.setAge(Integer.toString(age));
+                
 
 
                 i.putExtra("data", cDetail);
