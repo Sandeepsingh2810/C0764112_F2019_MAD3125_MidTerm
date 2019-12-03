@@ -133,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
                         grossIncome.getText().toString().length()==0 &&
                         rrsp.getText().toString().length()==0
 
-                ){
+                )
+                {
                     sin.setError("Sin Incorrect");
 
                     firstName.setError("This Field Cannot Be Empty");
@@ -208,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
                 cDetail.setRrsp(Double.parseDouble((rrsp.getText().toString())));
                 cDetail.setGender(gender);
                 cDetail.setAge(Integer.toString(age));
-                
+
 
 
                 i.putExtra("data", cDetail);
