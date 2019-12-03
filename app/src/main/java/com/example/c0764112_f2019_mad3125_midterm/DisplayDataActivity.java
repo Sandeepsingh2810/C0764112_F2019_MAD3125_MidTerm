@@ -29,6 +29,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         c = (CRACustomer) getIntent().getParcelableExtra("data");
 
         sin=findViewById(R.id.txtSin);
+        
 
         fullname=findViewById(R.id.txtFullName);
         gender=findViewById(R.id.txtGender);
@@ -53,7 +54,7 @@ public class DisplayDataActivity extends AppCompatActivity {
         if(c.getCarryForwardRrsp()<0.0){
             carry.setTextColor(this.getResources().getColor(colorAccent));
             carry.setTypeface(null, Typeface.BOLD_ITALIC);
-            
+
 
         }
 
