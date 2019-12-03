@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                         rrsp.getText().toString().length()==0
 
                 )
-                
+
                 {
                     sin.setError("Sin Incorrect");
 
@@ -161,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(firstName.getText().toString().length()==0)
+                
                 {
 
                     firstName.setError("This Field Cannot Be Empty");
